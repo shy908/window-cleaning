@@ -12,7 +12,7 @@ function ContactUs() {
                 <p><strong>Phone:</strong></p>
                 <p>
                     <a href="tel:0651223324">065 122 3324</a> | 
-                    <a href="tel:0837492163"> 083 749 2163</a>
+                    <a href="tel:0837492163"> 083 749 1163</a>
                 </p>
                 <p><strong>Email:</strong> <a href="mailto:kwikwindokleen@gmail.com">kwikwindokleen@gmail.com</a></p>
 
