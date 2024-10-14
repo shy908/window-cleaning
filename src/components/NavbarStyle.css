@@ -1,0 +1,115 @@
+/* Navbar container styling */
+.Navbaritems {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    background: linear-gradient(90deg, #004aad, #006eff, #0096ff); /* Gradient in shades of blue */
+}
+
+/* Navbar logo */
+.navbar-logo {
+    color: #fff;
+    font-size: 1.7rem;
+    font-weight: bold;
+    cursor: pointer;
+    font-family: 'Arial', sans-serif;
+    transition: color 0.3s;
+}
+
+.navbar-logo:hover {
+    color: #ffd700;
+}
+
+/* Menu icon (hamburger/close icon) */
+.menu-icons {
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #fff;
+    display: none; 
+    transition: color 0.3s;
+}
+
+.menu-icons:hover {
+    color: #ffd700; 
+}
+
+/* Nav menu styling */
+.nav-menu {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    gap: 10px;
+    margin: 0;
+    
+}
+.nav-links:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px #ffd700; 
+}
+.nav-links.active {
+    background-color: #ffd700;
+    color: #004aad;
+}
+
+
+/* Nav links styling */
+.nav-links {
+    display: block; 
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: 0.7rem 1.5rem;
+    margin: 0 10px; 
+    transition: background-color 0.3s, color 0.3s, transform 0.3s;
+    border-radius: 6px;
+}
+
+/* Hover effect for nav links */
+.nav-links:hover {
+    background-color: #ffd700;
+    color: #004aad; 
+}
+
+
+/* Media queries for responsive design */
+@media screen and (max-width: 850px) {
+    /* layout for mobile */
+    .nav-menu {
+        position: fixed;
+        top: -100%; 
+        left: 0;
+        width: 100%;
+        flex-direction: column;
+        background: linear-gradient(180deg, #006eff, #004aad); /* Vertical gradient */
+        padding-top: 20px;
+        transition: top 0.5s ease;
+        z-index: 9999;
+    }
+
+    /* Show nav menu when active */
+    .nav-menu.active {
+        top: 60px;
+    }
+
+    /* Style for individual nav links */
+    .nav-links {
+        padding: 1.5rem 0;
+        width: 100%;
+        text-align: center;
+        color: #fff;
+    }
+
+    /* Display the menu icon for mobile */
+    .menu-icons {
+        display: block;
+    }
+}

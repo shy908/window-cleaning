@@ -1,0 +1,140 @@
+/* Hero Section */
+.hero {
+    width: 100%;
+    height: 60vh; 
+    position: relative;
+    overflow: hidden; 
+}
+
+.hero-mid {
+    width: 100%;
+    height: 100%; /* To ensure full height */
+}
+
+/* Background Image Styling */
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* To maintain aspect ratio */
+}
+
+/* Overlay Gradient */
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 74, 173, 0.5), rgba(0, 110, 255, 0.5)); /* Gradient overlay */
+    z-index: 1; /* To place the overlay above the image */
+}
+
+/* Hero Text Styling */
+.hero-text {
+    position: absolute;
+    top: 50%; /* Center vertically */
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center horizontally */
+    width: 100%;
+    color: #fff; 
+    z-index: 2; /* To place the text above the overlay */
+    text-align: center; /* Center align text */
+}
+
+/* Hero Heading */
+.hero-text h1 {
+    font-size: 4rem; 
+    font-weight: 800;
+    background: #fff;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); 
+    animation: fadeIn 1s ease; /* Fade-in effect */
+}
+
+/* Hero Paragraph */
+.hero-text p {
+    font-size: 1.5rem; 
+    color: rgba(255, 255, 255, 0.9); 
+    padding: 0.5rem 0 2rem 0;
+}
+
+/* Hero Button */
+.hero-text .show {
+    text-decoration: none;
+    background-color: #ffd700; 
+    padding: 1rem 2rem;
+    border-radius: 7px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #004aad; 
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transition */
+}
+
+/* Button Hover Effect */
+.hero-text .show:hover {
+    background-color: #006eff; 
+    color: #fff; 
+    transform: translateY(-3px); /* Slight lift effect */
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px); /* Initial position */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0); /* Final position */
+    }
+}
+
+/* Responsive Design */
+@media screen and (max-width: 555px) {
+    .hero {
+        height: 40vh; 
+    }
+
+    .hero-mid {
+        height: 50vh; 
+    }
+
+    .hero-text h1 {
+        font-size: 1.5rem; 
+        padding: 5px 10px;
+    }
+
+    .hero-text p {
+        font-size: 1.1rem;
+        padding: 0 0 2rem 0;
+    }
+
+    .hero-text .show {
+        padding: .6rem 1.2rem;
+        border-radius: 6px;
+        font-size: 1rem;
+    }
+}
+
+/* Adjustments for Larger Screens */
+@media screen and (min-width: 556px) {
+    .hero {
+        height: 70vh; /* Taller hero section for better visibility */
+    }
+
+    .hero-text h1 {
+        font-size: 3.5rem;
+    }
+
+    .hero-text p {
+        font-size: 1.3rem;
+    }
+
+    .hero-text .show {
+        padding: 1rem 2rem; 
+        font-size: 1.1rem; 
+    }
+}
