@@ -4,7 +4,7 @@ function ContactUs() {
     return (
         <div className="contactus-container">
             <p>
-                Welcome to Kwik-Wind-O-Kleen! We are committed to delivering exceptional window and residential cleaning services across the Western Cape. With our professional expertise, we ensure spotless, streak-free windows that add brilliance to any space. Serving areas throughout Cape Town, from the City Bowl to Constantia, Hout Bay, and beyond, Kwik-Wind-O-Kleen is here to meet your unique cleaning needs. Trust us to bring clarity and freshness to your surroundings—contact us today!
+                Welcome to Kwik-Wind-O-Kleen! We are dedicated to providing exceptional cleaning services across the Western Cape, specializing in window cleaning, mold removal, carpet care, and floor maintenance. With our professional expertise, we ensure spotless and well-maintained spaces that enhance the beauty and cleanliness of your environment. From residential homes to commercial properties, we cater to a variety of cleaning needs throughout Cape Town and surrounding areas. Trust us to deliver clarity and freshness to your surroundings—contact us today!
             </p>
 
             <div className="contact-details">
@@ -21,7 +21,7 @@ function ContactUs() {
                     <a href="https://www.facebook.com/profile.php?id=100091976320949" aria-label="Facebook" target="_blank" rel="noopener noreferrer">
                         <i className="fa-brands fa-facebook-square"></i>
                     </a>
-                    <a href="https://www.instagram.com/" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
+                    <a href="https://wa.me/083 749 1163" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
                         <i className="fa-brands fa-instagram-square"></i>
                     </a>
                     <a href="https://wa.me/0651223324" aria-label="WhatsApp" target="_blank" rel="noopener noreferrer">

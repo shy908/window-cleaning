@@ -13,7 +13,7 @@ function Home (){
         <Hero
         cName="hero"
         heroImg={HomeImg}
-        title="Professional Window Cleaning"
+        title="Profession Cleaning Services"
         text="We got you covered"
         buttonText="Get in Touch"
         url="/contact"

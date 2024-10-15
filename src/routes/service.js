@@ -35,23 +35,26 @@ function Service() {
             <div className="service-description">
                 <h2>About Our Services</h2>
                 <p>
-                    Our expertise in professional cleaning allows us to carefully evaluate each project, addressing requirements, logistics, and safety measures to deliver a service that stands above the rest.
+                    At Kwik-Wind-O-Kleen, we specialize in a comprehensive range of cleaning solutions tailored to your needs. Our team is equipped to handle everything from window cleaning and mold removal to deep carpet and floor care.
                 </p>
                 <p>
-                    At Kwik-Wind-O-Kleen, we offer a full range of window cleaning and property care solutions, tailored to the unique needs of each building and client. From cozy townhouses to expansive corporate campuses, we provide comprehensive cleaning for all types of properties.
+                    Our window cleaning services ensure crystal-clear views while protecting your glass surfaces. We also provide effective mold removal solutions to keep your spaces healthy and safe.
                 </p>
                 <p>
-                    Our reach spans across the Western Cape, handling everything from charming residential homes in the suburbs to bustling offices and hotels throughout Cape Town. With an emphasis on precision and a commitment to excellence, we’re here to tackle any cleaning challenge.
+                    Whether it's residential carpets that need revitalizing or commercial flooring that requires professional maintenance, our expertise covers all aspects of property care, ensuring every surface looks its best.
+                </p>
+                <p>
+                    Serving the Western Cape, we are committed to delivering exceptional cleaning services for all types of properties, from cozy homes to bustling offices. Trust us to tackle your cleaning challenges with precision and care.
                 </p>
                 <p>
                     For specialized service and a free assessment, contact Kwik-Wind-O-Kleen today:
                 </p>
                 <p>
                     <strong>Email:</strong> kwikwindokleen@gmail.com <br />
-                    <strong>Cell & WhatsApp:</strong> 065 122 3324 / 083 749 2163
+                    <strong>Cell & WhatsApp:</strong> 065 122 3324 / 083 749 1163
                 </p>
             </div>
-            <Footer/>
+            <Footer />
         </>
     );
 }
