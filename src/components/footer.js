@@ -8,7 +8,7 @@ const Footer = () => {
                 <p>Get in touch with Us</p>
             </div>
             <div className="footer-socials">
-                <a href="https://www.facebook.com/profile.php?id=100091976320949" aria-label="Facebook">
+                <a href="https://www.facebook.com/profile.php?id=61567570160885" aria-label="Facebook">
                     <i className="fa-brands fa-facebook-square"></i>
                 </a>
                 <a href="https://wa.me/083 749 2163" aria-label="Instagram">
