@@ -1,5 +1,4 @@
 import OurServices from "./services";
-import "./serviceStyle.css";
 
 function ServiceData(props) {
     return (

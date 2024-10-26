@@ -1,0 +1,22 @@
+.dots-container {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    z-index: 2;
+  }
+  
+  .dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 5px;
+    background-color: white;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .dot.active {
+    background-color: #ff6347; /* Active dot color */
+  }  

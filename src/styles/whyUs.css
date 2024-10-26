@@ -1,24 +1,24 @@
 .whyus-section {
     margin: 4rem 6rem;
-    background: rgba(255, 255, 255, 0.9); /* Slightly transparent white background */
-    border-radius: 8px; 
+    background: rgba(255, 255, 255, 0.95); /* Slightly more opaque for better readability */
+    border-radius: 12px; /* Slightly larger radius for a softer look */
     color: #2a2a2a; 
     padding: 40px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-    }
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15); /* Slightly more pronounced shadow */
+}
 
 .whyus-content h2 {
     font-size: 2.5rem; 
     margin-bottom: 20px; 
     text-align: center;
-    color: #004aad; 
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+    color: #1f75a8; /* Match navbar color */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.15); /* Softer shadow */
 }
 
 .whyus-content ul {
     margin-top: 1rem; 
     font-size: 1.2rem;
-    text-align: start;
+    text-align: left; /* Changed to left for better alignment */
     list-style: none;
     padding: 0; 
 }
@@ -26,14 +26,17 @@
 .whyus-content ul li {
     margin-bottom: 0.8rem; 
     position: relative; 
-    padding-left: 1.5rem; 
+    padding-left: 2rem; /* Increased for better visual separation */
+    line-height: 1.6; /* Improved line height for readability */
 }
+
 /* Contact Us Now Link */
 .whyus-content ul li a {
-    color: #004aad; 
+    color: #1f75a8; /* Match navbar color */
     font-weight: bold;
     text-decoration: none;
     position: relative;
+    transition: color 0.3s ease; /* Smooth color transition */
     animation: wiggle 1s ease-in-out infinite alternate; /* Gentle wiggle */
 }
 
@@ -43,13 +46,13 @@
         transform: translateX(0);
     }
     100% {
-        transform: translateX(5px); /* Slight shift to the right */
+        transform: translateX(3px); /* Slightly reduced shift */
     }
 }
 
 /* Hover Effect for Emphasis */
 .whyus-content ul li a:hover {
-    color: #002f6c; 
+    color: #004aad; /* Darker shade for hover effect */
     text-decoration: underline; 
 }
 
@@ -57,14 +60,15 @@
     content: '✔'; 
     position: absolute;
     left: 0; 
-    color: #004aad; 
+    color: #1f75a8; 
     font-size: 1.5rem;
+    top: 0; 
 }
 
 .whyus-icon {
     margin-top: 20px;
     font-size: 2rem; 
-    color: #004aad;
+    color: #1f75a8; 
     text-align: center; 
 }
 
@@ -72,7 +76,7 @@
 @media screen and (max-width: 850px) {
     .whyus-section {
         margin: 4rem 2rem; 
-        padding: 1.5rem; 
+        padding: 2rem; 
     }
 
     .whyus-content h2 {
@@ -84,6 +88,6 @@
     }
 
     .whyus-content ul li {
-        padding-left: 1rem; 
+        padding-left: 1.5rem; 
     }
 }

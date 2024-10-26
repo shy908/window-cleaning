@@ -1,30 +1,23 @@
-import Navbar from "../components/Navbar";
-import Hero from "../components/hero";
-import HomeImg from "../assets/com-cleaning.jpg"
-import Company from "../components/company"
-import OurServices from "../components/services"
-import WhyUs from "../components/whyUs";
-import Footer from "../components/footer";
+import React, { Suspense, lazy } from "react";
 
-function Home (){
-    return(
-        <>
-        <Navbar/>
-        <Hero
-        cName="hero"
-        heroImg={HomeImg}
-        title="Profession Cleaning Services"
-        text="We got you covered"
-        buttonText="Get in Touch"
-        url="/contact"
-        btnClass="show"
-        />
-        <Company/>
-        <OurServices/>
-        <WhyUs/>
-        <Footer/>
-        </>
-    )
+const Navbar = lazy(() => import("../components/Navbar"));
+const Slider = lazy(() => import("../components/Slider"));
+const Company = lazy(() => import("../components/company"));
+const OurServices = lazy(() => import("../components/services"));
+const WhyUs = lazy(() => import("../components/whyUs"));
+const Footer = lazy(() => import("../components/footer"));
+
+function Home() {
+    return (
+        <Suspense fallback={<div>Loading...</div>}>
+            <Navbar />
+            <Slider />
+            <Company />
+            <OurServices />
+            <WhyUs />
+            <Footer />
+        </Suspense>
+    );
 }
 
 export default Home;

@@ -1,4 +1,3 @@
-import "./serviceStyle.css";
 import ServiceData from "./serviceData";
 import Service1 from "../assets/rope-access.jpg";
 import Service2 from "../assets/com-cleaning.jpg";

@@ -1,0 +1,220 @@
+:root {
+    --light-color: #f0f8ff;
+    --dark-blue: #1f75a8;
+    --active-dot-color: #6cc9ff;
+    --overlay-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Slider Container */
+.slider-container {
+    position: relative;
+    width: 100%;
+    height: 40vh;
+    overflow: hidden;
+}
+
+/* Arrows */
+.arrow-container {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+    z-index: 3;
+}
+
+.arrow {
+    background: transparent;
+    color: var(--light-color);
+    border: none;
+    font-size: 40px;
+    cursor: pointer;
+    padding: 15px;
+    transition: background-color 0.3s ease;
+}
+
+.arrow:hover {
+    background-color: rgba(108, 201, 255, 0.5);
+    border-radius: 50%;
+}
+
+/* Arrows */
+.arrow-container {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+    z-index: 3;
+    opacity: 0; /* Hidden by default */
+    transition: opacity 0.3s ease; /* Smooth transition */
+  }
+  
+  .slider-container:hover .arrow-container {
+    opacity: 1; /* Show arrows on hover */
+  }
+  
+  .arrow {
+    background: transparent;
+    color: var(--light-color);
+    border: none;
+    font-size: 40px;
+    cursor: pointer;
+    padding: 15px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .arrow:hover {
+    background-color: rgba(108, 201, 255, 0.5);
+    border-radius: 50%;
+  }
+  
+/* Dots */
+.dot-container {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    z-index: 3;
+}
+
+.dot {
+    height: 16px;
+    width: 16px;
+    margin: 0 5px;
+    border-radius: 50%;
+    background-color: rgba(240, 248, 255, 0.5);
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.active-dot {
+    background-color: var(--active-dot-color);
+    transform: scale(1.2);
+}
+
+/* Slider Content Styles */
+.slider-content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    transform: scale(1.05);
+}
+
+.slide.active {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.slide-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Backdrop Overlay */
+.slide-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--overlay-color);
+    z-index: 1;
+}
+
+/* Title Styling */
+.slide-title {
+    position: absolute;
+    bottom: 25%;
+    left: 50%;
+    transform: translate(-50%, 100%);
+    width: 100%;
+    color: var(--light-color);
+    z-index: 2;
+    text-align: center; 
+    font-size: 2.5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    padding: 0 20px;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide.active .slide-title {
+    transform: translate(-50%, -40%);
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+    .slide-title {
+        font-size: 2rem;
+        bottom: 40%;
+    }
+
+    .learn-more-button {
+        bottom: 15%;
+    }
+}
+
+@media (max-width: 768px) {
+    .slide-title {
+        font-size: 1.8rem;
+        bottom: 40%;
+    }
+
+    .learn-more-button {
+        bottom: 20%;
+    }
+}
+
+@media (max-width: 480px) {
+    .slide-title {
+        font-size: 1.5rem;
+        bottom: 50%;
+        padding: 0 10px;
+    }
+
+    .learn-more-button {
+        bottom: 5%;
+        padding: 6px 12px;
+    }
+
+    .arrow {
+        font-size: 30px;
+        padding: 10px;
+    }
+
+    .dot {
+        height: 14px;
+        width: 14px;
+    }
+}
+
+/* Button Styling */
+.learn-more-button {
+    background-color: var(--dark-blue);
+    color: var(--light-color);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    position: absolute;
+    bottom: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: background-color 0.3s ease;
+}
+
+.learn-more-button:hover {
+    background-color: #6cc9ff;
+}

@@ -1,0 +1,68 @@
+.hero-mid {
+    position: relative;
+    height: 30vh; 
+    overflow: hidden;
+    display: flex;
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+}
+
+.hero-mid img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1; /* Places the image behind the text */
+    animation: zoom 10s infinite; /* Zoom in and out animation */
+}
+
+@keyframes zoom {
+    0%, 100% {
+        transform: scale(1); /* Original size */
+    }
+    50% {
+        transform: scale(1.1); /* Zoom in */
+    }
+}
+
+.hero-text {
+    position: relative;
+    z-index: 1; /* Ensures text is above the image */
+    color: #ffffff; 
+    text-align: center; 
+    padding: 20px; /* Padding for spacing */
+}
+
+.hero-text h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+.hero-text p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem; 
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .hero-text h1 {
+        font-size: 2.5rem; 
+    }
+
+    .hero-text p {
+        font-size: 1rem; 
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-text h1 {
+        font-size: 2rem;
+    }
+
+    .hero-text p {
+        font-size: 0.9rem;
+    }
+}

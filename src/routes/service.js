@@ -40,6 +40,7 @@ function Service() {
                 <p>
                     Our window cleaning services ensure crystal-clear views while protecting your glass surfaces. We also provide effective mold removal solutions to keep your spaces healthy and safe.
                 </p>
+                
                 <p>
                     Whether it's residential carpets that need revitalizing or commercial flooring that requires professional maintenance, our expertise covers all aspects of property care, ensuring every surface looks its best.
                 </p>

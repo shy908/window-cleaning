@@ -1,4 +1,3 @@
-import "./contactUsStyle.css";
 
 function ContactUs() {
     return (

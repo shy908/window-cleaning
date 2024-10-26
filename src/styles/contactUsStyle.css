@@ -1,8 +1,8 @@
 .contactus-container {
     padding: 4rem 6rem;
-    background: linear-gradient(135deg, rgba(255, 255, 255, 0.9), rgba(240, 240, 240, 0.9)); /* Gradient background */
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.9), rgba(240, 240, 240, 0.9)); 
     border-radius: 8px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15); /* Increased shadow for depth */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15); 
     color: #2a2a2a;
     text-align: left;
     position: relative; /* For pseudo-elements */
@@ -75,7 +75,7 @@
     font-weight: bold;
     color: #004aad;
     cursor: pointer;
-    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s; /* Added shadow transition */
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s; 
 }
 
 .submit-button:hover {
@@ -108,7 +108,7 @@
 .socials i {
     font-size: 2rem;
     color: #004aad;
-    transition: color 0.3s, transform 0.3s; /* Added transform on hover */
+    transition: color 0.3s, transform 0.3s; 
 }
 
 .socials i:hover {

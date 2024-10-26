@@ -1,4 +1,3 @@
-import "./whyUs.css";
 
 function WhyUs() {
     return (
