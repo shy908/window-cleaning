@@ -1,17 +1,17 @@
 .whyus-section {
     margin: 4rem 6rem;
-    background: rgba(255, 255, 255, 0.95); /* Slightly more opaque for better readability */
-    border-radius: 12px; /* Slightly larger radius for a softer look */
+    background: rgba(255, 255, 255, 0.95); 
+    border-radius: 12px; 
     color: #2a2a2a; 
     padding: 40px;
-    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15); /* Slightly more pronounced shadow */
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15); 
 }
 
 .whyus-content h2 {
     font-size: 2.5rem; 
     margin-bottom: 20px; 
     text-align: center;
-    color: #1f75a8; /* Match navbar color */
+    color: #1f75a8; 
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.15); /* Softer shadow */
 }
 
@@ -32,29 +32,42 @@
 
 /* Contact Us Now Link */
 .whyus-content ul li a {
-    color: #1f75a8; /* Match navbar color */
+    color: #1f75a8; 
     font-weight: bold;
     text-decoration: none;
     position: relative;
-    transition: color 0.3s ease; /* Smooth color transition */
+    transition: color 0.3s ease; 
     animation: wiggle 1s ease-in-out infinite alternate; /* Gentle wiggle */
 }
 
-/* Wiggle Animation */
-@keyframes wiggle {
+@keyframes fadeInUp {
     0% {
-        transform: translateX(0);
+      opacity: 0;
+      transform: translateY(20px);
     }
     100% {
-        transform: translateX(3px); /* Slightly reduced shift */
+      opacity: 1;
+      transform: translateY(0);
     }
-}
-
-/* Hover Effect for Emphasis */
-.whyus-content ul li a:hover {
-    color: #004aad; /* Darker shade for hover effect */
-    text-decoration: underline; 
-}
+  }
+  
+  .whyus-section {
+    margin: 4rem 6rem;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 12px;
+    color: #2a2a2a;
+    padding: 40px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+    opacity: 0; /* Start hidden */
+    transform: translateY(20px); /* Start slightly down */
+    transition: opacity 0.5s, transform 0.5s; /* Transition properties */
+  }
+  
+  .whyus-section.visible {
+    opacity: 1; /* Fade in */
+    transform: translateY(0); /* Move to position */
+  }
+  
 
 .whyus-content ul li::before {
     content: '✔'; 
