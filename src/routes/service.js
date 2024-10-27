@@ -3,8 +3,12 @@ import Hero from "../components/hero";
 import ServiceImg from "../assets/clean.jpg";
 import OurServices from "../components/services";
 import Footer from "../components/footer";
+import { useEffect } from "react";
 
 function Service() {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+      }, []);
     return (
         <>
             <Navbar />
