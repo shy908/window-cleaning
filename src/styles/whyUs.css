@@ -1,106 +1,104 @@
 .whyus-section {
-    margin: 4rem 6rem;
-    background: rgba(255, 255, 255, 0.95); 
-    border-radius: 12px; 
-    color: #2a2a2a; 
-    padding: 40px;
-    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15); 
-}
-
-.whyus-content h2 {
-    font-size: 2.5rem; 
-    margin-bottom: 20px; 
+    margin: 4rem auto;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 12px;
+    color: #2a2a2a;
+    padding: 3rem;
+    max-width: 800px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+  }
+  
+  .whyus-section.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .whyus-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
     text-align: center;
-    color: #1f75a8; 
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.15); /* Softer shadow */
-}
-
-.whyus-content ul {
-    margin-top: 1rem; 
-    font-size: 1.2rem;
-    text-align: left; /* Changed to left for better alignment */
+    color: #1f75a8;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1); /* Slightly softer */
+  }
+  
+  .whyus-content ul {
+    margin-top: 1.5rem;
+    font-size: 1.1rem;
+    text-align: left;
     list-style: none;
-    padding: 0; 
-}
-
-.whyus-content ul li {
-    margin-bottom: 0.8rem; 
-    position: relative; 
-    padding-left: 2rem; /* Increased for better visual separation */
-    line-height: 1.6; /* Improved line height for readability */
-}
-
-/* Contact Us Now Link */
-.whyus-content ul li a {
-    color: #1f75a8; 
+    padding: 0;
+  }
+  
+  .whyus-content ul li {
+    margin-bottom: 0.8rem;
+    position: relative;
+    padding-left: 2rem;
+    line-height: 1.6;
+  }
+  
+  .whyus-content ul li::before {
+    content: "✔";
+    position: absolute;
+    left: 0;
+    color: #1f75a8;
+    font-size: 1.5rem;
+    top: 0.1rem;
+  }
+  
+  /* Contact Us Now Link */
+  .whyus-content ul li a {
+    color: #1f75a8;
     font-weight: bold;
     text-decoration: none;
-    position: relative;
-    transition: color 0.3s ease; 
-    animation: wiggle 1s ease-in-out infinite alternate; /* Gentle wiggle */
-}
-
-@keyframes fadeInUp {
-    0% {
+    opacity: 0;
+    animation: fadeIn 0.6s ease forwards;
+    animation-delay: 0.6s;
+  }
+  
+  @keyframes fadeIn {
+    from {
       opacity: 0;
       transform: translateY(20px);
     }
-    100% {
+    to {
       opacity: 1;
       transform: translateY(0);
     }
   }
   
-  .whyus-section {
-    margin: 4rem 6rem;
-    background: rgba(255, 255, 255, 0.95);
-    border-radius: 12px;
-    color: #2a2a2a;
-    padding: 40px;
-    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
-    opacity: 0; /* Start hidden */
-    transform: translateY(20px); /* Start slightly down */
-    transition: opacity 0.5s, transform 0.5s; /* Transition properties */
-  }
-  
-  .whyus-section.visible {
-    opacity: 1; /* Fade in */
-    transform: translateY(0); /* Move to position */
-  }
-  
-
-.whyus-content ul li::before {
-    content: '✔'; 
-    position: absolute;
-    left: 0; 
-    color: #1f75a8; 
-    font-size: 1.5rem;
-    top: 0; 
-}
-
-.whyus-icon {
+  .whyus-icon {
     margin-top: 20px;
-    font-size: 2rem; 
-    color: #1f75a8; 
-    text-align: center; 
-}
-
-/* Responsive adjustments */
-@media screen and (max-width: 850px) {
+    font-size: 2.5rem;
+    color: #1f75a8;
+    text-align: center;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  .whyus-icon:hover {
+    color: #ff5c5c;
+  }
+  
+  /* Responsive adjustments */
+  @media screen and (max-width: 850px) {
     .whyus-section {
-        margin: 4rem 2rem; 
-        padding: 2rem; 
+      margin: 2rem;
+      padding: 2rem;
     }
-
+  
     .whyus-content h2 {
-        font-size: 1.8rem; 
+      font-size: 2rem;
     }
-
+  
     .whyus-content ul {
-        font-size: 1rem; 
+      font-size: 1rem;
     }
-
+  
     .whyus-content ul li {
-        padding-left: 1.5rem; 
+      padding-left: 1.5rem;
     }
-}
+  }
+  

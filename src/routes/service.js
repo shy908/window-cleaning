@@ -55,9 +55,10 @@ function Service() {
                     For specialized service and a free assessment, contact Kwik-Wind-O-Kleen today:
                 </p>
                 <p>
-                    <strong>Email:</strong> kwikwindokleen@gmail.com <br />
-                    <strong>Cell & WhatsApp:</strong> 065 122 3324 / 083 749 1163
-                </p>
+                <strong>Email:</strong> <a href="mailto:kwikwindokleen@gmail.com">kwikwindokleen@gmail.com</a> <br />
+                <strong>Cell & WhatsApp:</strong> 
+                <a href="tel:0651223324">065 122 3324</a> / <a href="tel:0837491163">083 749 1163</a>
+            </p>
             </div>
             <Footer />
         </>
