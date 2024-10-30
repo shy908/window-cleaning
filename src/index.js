@@ -11,7 +11,8 @@ import './styles/footerStyles.css';
 import './styles/heroStyle.css'; 
 import './styles/serviceStyle.css'; 
 import './styles/slider.css'; 
-import './styles/whyUs.css'; 
+import './styles/whyUs.css';
+import './styles/WhatsAppButton.css';  
 
 
 const rootElement = document.getElementById("root");
